@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+    <title>درخواست ها</title>
+</head>
+
+<body>
+
+    <section class="d-flex mx-0">
+        <div class="px-0 sidebar transition h-100vh">
+            <div class="py-4 px-3">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-3">
+                  <img alt="" src="assets/img/Vector.png" class="cursor">
+                  <img alt="bell-alert" src="assets/img/bell-alert.svg" class="cursor transition">
+                  <img alt="cog" src="assets/img/cog.svg" class="cursor transition">
+                </div>
+                <img alt="" src="assets/img/chevron-double-right.svg" class="cursor transition" id="toggle-sidebar">
+              </div>
+              <div
+                class="avatar d-flex align-items-center justify-content-center rounded-circle mx-auto mt-5 position-relative">
+                <div>
+                  <img src="assets/img/69.png">
+                  <div>
+                    <input type="file" class="position-absolute top-0 end-0 start-0 bottom-0 w-100 z-10 cursor opacity-none">
+                    <img alt="add-circle" src="assets/img/add-circle.svg" class="position-absolute -bottom-4 start-0 cursor">
+                  </div>
+                </div>
+              </div>
+              <div class="text-center text-white mt-4 avatar-name transition">
+                <h6 class="font-bold">صابر علی نژاد</h6>
+                <p class="text-white-50">صاحب امتیاز معدن</p>
+              </div>
+            </div>
+            <ul class="m-0 px-0 fw-bold">
+                <li class="px-3 transition">
+                  <a href="dashboard.html" class="d-flex align-items-center justify-content-between text-white">
+                    <div class="d-flex align-items-center gap-3">
+                      <img alt="menu" src="assets/img/squares-plus.png">
+                      <p class="mb-0">داشبورد</p>
+                    </div>
+                    <img alt="arrow" src="assets/img/arrow-left.png">
+                  </a>
+                </li>
+                <li class="px-3 transition active">
+                  <a href="requests.html" class="d-flex align-items-center justify-content-between text-white">
+                    <div class="d-flex align-items-center gap-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                        <path d="M19.25 6.51104C20.1341 6.79549 20.75 7.6392 20.75 8.60822V12.8938C20.75 14.0304 19.9026 14.9943 18.7697 15.0867C18.4308 15.1144 18.0909 15.1386 17.75 15.1592V18.25L14.75 15.25C13.3963 15.25 12.0556 15.1948 10.7302 15.0866C10.4319 15.0623 10.1534 14.9775 9.90494 14.8451M19.25 6.51104C19.0986 6.46232 18.9393 6.43 18.7739 6.41628C17.4472 6.30616 16.1051 6.25 14.75 6.25C13.3948 6.25 12.0528 6.30616 10.7261 6.41627C9.59499 6.51015 8.75 7.47323 8.75 8.60821V12.8937C8.75 13.731 9.20986 14.4746 9.90494 14.8451M19.25 6.51104V4.63731C19.25 3.01589 18.0983 1.61065 16.4903 1.40191C14.4478 1.13676 12.365 1 10.2503 1C8.13533 1 6.05233 1.13678 4.00963 1.40199C2.40173 1.61074 1.25 3.01598 1.25 4.63738V10.8626C1.25 12.484 2.40173 13.8893 4.00964 14.098C4.58661 14.1729 5.16679 14.2376 5.75 14.2918V19L9.90494 14.8451" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      <p class="mb-0">درخواست ها</p>
+                    </div>
+                    <img alt="arrow" src="assets/img/arrow-left.png">
+                  </a>
+                </li>
+                <li class="px-3 transition">
+                  <a href="products.html" class="d-flex align-items-center justify-content-between text-white">
+                    <div class="d-flex align-items-center gap-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                        <path d="M19.25 6.51104C20.1341 6.79549 20.75 7.6392 20.75 8.60822V12.8938C20.75 14.0304 19.9026 14.9943 18.7697 15.0867C18.4308 15.1144 18.0909 15.1386 17.75 15.1592V18.25L14.75 15.25C13.3963 15.25 12.0556 15.1948 10.7302 15.0866C10.4319 15.0623 10.1534 14.9775 9.90494 14.8451M19.25 6.51104C19.0986 6.46232 18.9393 6.43 18.7739 6.41628C17.4472 6.30616 16.1051 6.25 14.75 6.25C13.3948 6.25 12.0528 6.30616 10.7261 6.41627C9.59499 6.51015 8.75 7.47323 8.75 8.60821V12.8937C8.75 13.731 9.20986 14.4746 9.90494 14.8451M19.25 6.51104V4.63731C19.25 3.01589 18.0983 1.61065 16.4903 1.40191C14.4478 1.13676 12.365 1 10.2503 1C8.13533 1 6.05233 1.13678 4.00963 1.40199C2.40173 1.61074 1.25 3.01598 1.25 4.63738V10.8626C1.25 12.484 2.40173 13.8893 4.00964 14.098C4.58661 14.1729 5.16679 14.2376 5.75 14.2918V19L9.90494 14.8451" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      <p class="mb-0">مواد و محصولات</p>
+                    </div>
+                    <img alt="arrow" src="assets/img/arrow-left.png">
+                  </a>
+                </li>
+                <li class="px-3 transition">
+                  <a href="contracts.html" class="d-flex align-items-center justify-content-between text-white">
+                    <div class="d-flex align-items-center gap-3">
+                      <img alt="menu" src="assets/img/wallet.svg">
+                      <p class="mb-0">قراردادها</p>
+                    </div>
+                    <img alt="arrow" src="assets/img/arrow-left.png">
+                  </a>
+                </li>
+                <li class="px-3 transition">
+                  <a href="projects.html" class="d-flex align-items-center justify-content-between text-white">
+                    <div class="d-flex align-items-center gap-3">
+                      <img alt="menu" src="assets/img/document-text.svg">
+                      <p class="mb-0">پروژه ها</p>
+                    </div>
+                    <img alt="arrow" src="assets/img/arrow-left.png">
+                  </a>
+                </li>
+                <li class="px-3 transition">
+                  <a href="mines.html" class="d-flex align-items-center justify-content-between text-white">
+                    <div class="d-flex align-items-center gap-3">
+                      <img alt="menu" src="assets/img/wallet.svg">
+                      <p class="mb-0">اطلاعات معدن</p>
+                    </div>
+                    <img alt="arrow" src="assets/img/arrow-left.png">
+                  </a>
+                </li>
+                <li class="px-3 transition">
+                  <a href="profile.html" class="d-flex align-items-center justify-content-between text-white">
+                    <div class="d-flex align-items-center gap-3">
+                      <img alt="menu" src="assets/img/user.svg">
+                      <p class="mb-0">اطلاعات کاربری</p>
+                    </div>
+                    <img alt="arrow" src="assets/img/arrow-left.png">
+                  </a>
+                </li>
+              </ul>
+          </div>
+        <div class="p-3 col-10 bg-gray flex-grow-1 h-100vh overflow-auto">
+            <div id="overlay"></div>
+            <!-- header -->
+            <header class="d-flex align-items-lg-center gap-4 flex-column flex-lg-row justify-content-lg-between">
+                <div class="d-flex flex-column flex-md-row align-items-center gap-3">
+                    <div class="d-flex align-items-center gap-3 justify-content-between w-100">
+                        <svg id="openSidebar" xmlns="http://www.w3.org/2000/svg" width="33" height="33"
+                            fill="currentColor" class="bi bi-list d-lg-none cursor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                        <a>
+                            <img alt="logo" src="assets/img/Frame 9249.png">
+                        </a>
+                    </div>
+                    <div
+                        class="bg-white rounded-12 w-390 py-1 px-2 border d-flex align-items-center justify-content-between">
+                        <input placeholder="جستجو" class="border-0 outline-none flex-grow-1">
+                        <img alt="search" src="assets/img/Vector.svg">
+                    </div>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <div class="language position-relative cursor">
+                        <div class="d-flex align-items-center gap-2 dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">
+                            <img alt="language" src="assets/img/artwork.png">
+                            <p class="mb-0 fw-bold fs-7 text-secondary">فارسی</p>
+                        </div>
+                        <ul class="dropdown-menu p-0 m-0 font-bold bg-white shadow-sm rounded-4">
+                            <li class="d-flex align-items-center justify-content-center py-3 gap-3 border-bottom">
+                                <img alt="language" src="assets/img/artwork.png">
+                                <p class="mb-0 fw-bold fs-7 text-secondary">فارسی</p>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-center py-3 gap-3">
+                                <img alt="language" src="assets/img/artwork.png">
+                                <p class="mb-0 fw-bold fs-7 text-secondary">English</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="divider"></span>
+                    <div class="exit d-flex align-items-center gap-2 cursor">
+                        <img alt="language" src="assets/img/exit.svg">
+                        <p class="mb-0 fw-bold fs-7 text-secondary">خروج از حساب </p>
+                    </div>
+                </div>
+            </header>
+            <!-- main -->
+            <main>
+                <!-- breadcrumb -->
+                <nav aria-label="breadcrumb" class="mt-4">
+                    <ol class="breadcrumb fs-7 font-bold">
+                        <li class="breadcrumb-item"><a class="text-dark" href="dashboard.html">ناحیه کاربری</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">درخواست ها</li>
+                    </ol>
+                </nav>
+                <!-- table -->
+                <div class="bg-white rounded-4 pb-3">
+                    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between p-3">
+                        <p class="d-flex align-items-center gap-2 font-bold mb-0 text-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M19.5 14.25V11.625C19.5 9.76104 17.989 8.25 16.125 8.25H14.625C14.0037 8.25 13.5 7.74632 13.5 7.125V5.625C13.5 3.76104 11.989 2.25 10.125 2.25H8.25M8.25 15H15.75M8.25 18H12M10.5 2.25H5.625C5.00368 2.25 4.5 2.75368 4.5 3.375V20.625C4.5 21.2463 5.00368 21.75 5.625 21.75H18.375C18.9963 21.75 19.5 21.2463 19.5 20.625V11.25C19.5 6.27944 15.4706 2.25 10.5 2.25Z" stroke="#1F2A37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                           درخواست ها
+                        </p>
+                        <a href="new-requests.html" class="btn btn-info d-flex align-items-center gap-2 fw-bold text-white fs-7 px-4 py-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" fill="none">
+                                <path d="M20.25 3.75V14.25C20.25 15.4926 19.2426 16.5 18 16.5H3C1.75736 16.5 0.75 15.4926 0.75 14.25V3.75M20.25 3.75C20.25 2.50736 19.2426 1.5 18 1.5H3C1.75736 1.5 0.75 2.50736 0.75 3.75M20.25 3.75V3.99271C20.25 4.77405 19.8447 5.49945 19.1792 5.90894L11.6792 10.5243C10.9561 10.9694 10.0439 10.9694 9.32078 10.5243L1.82078 5.90894C1.15535 5.49945 0.75 4.77405 0.75 3.99271V3.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            <p class="mb-0">درخواست جدید</p>
+                          </a>
+                    </div>
+                    <div class="px-3">
+                        <ul class="nav nav-tabs p-0 font-bold fs-14" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#home-tab-pane" type="button" role="tab"
+                                    aria-controls="home-tab-pane" aria-selected="true">درخواست های جاری</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                    aria-controls="profile-tab-pane" aria-selected="false">درخواست های گذشته</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content mt-2" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                aria-labelledby="home-tab" tabindex="0">
+                                <div class="p-3 d-flex flex-wrap gap-3 align-items-center justify-content-between">
+                                    <div
+                                        class="bg-white rounded-12 w-390 py-1 px-2 border d-flex align-items-center justify-content-between">
+                                        <input placeholder="جستجو" class="border-0 outline-none flex-grow-1">
+                                        <img alt="search" src="assets/img/Vector.svg">
+                                    </div>
+                                    <select class="form-select w-184">
+                                        <option>وضعیت</option>
+                                        <option>تحویل داده شده</option>
+                                        <option>در انتظار</option>
+                                    </select>
+                                </div>
+                                <div class="table-responsive p-3">
+                                    <table
+                                        class="table table-striped text-center table-hover fs-14 fw-bold text-secondary">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="text-center">
+                                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                                        <img alt="sort" src="assets/img/chevron-up-down.svg">
+                                                        <span class="cursor">شناسه</span>
+                                                    </div>
+                                                </th>
+                                                <th scope="col" class="text-center">
+                                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                                        <img alt="sort" src="assets/img/chevron-up-down.svg">
+                                                        <span class="cursor">تاریخ</span>
+                                                    </div>
+                                                </th>
+                                                <th scope="col" class="text-center">
+                                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                                        <img alt="sort" src="assets/img/chevron-up-down.svg">
+                                                        <span class="cursor">موضوع</span>
+                                                    </div>
+                                                </th>
+                                                <th scope="col" class="text-center">
+                                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                                        <img alt="sort" src="assets/img/chevron-up-down.svg">
+                                                        <span class="cursor">توضیحات</span>
+                                                    </div>
+                                                </th>
+                                                <th scope="col" class="text-center">
+                                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                                        <img alt="sort" src="assets/img/chevron-up-down.svg">
+                                                        <span class="cursor">وضعیت</span>
+                                                    </div>
+                                                </th>
+                                                <th scope="col" class="text-center">
+                                                    <span class="cursor">جزئیات</span>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="text-secondary">
+                                                <td class="py-3" scope="row">2365</td>
+                                                <td class="py-3">1402/01/08</td>
+                                                <td class="py-3">پیگیری درخواست قرارداد شماره 84 </td>
+                                                <td class="py-3">احتراما به استحضار میرساند با توجه به ...</td>
+                                                <td class="py-3"><span
+                                                        class="alert-primary py-1 fs-7 px-2 rounded-pill">در انتظار
+                                                        پاسخ</span></td>
+                                                <td><a href="request-details.html"
+                                                        class="btn bg-gray3 text-secondary border border-dark px-4 font-bold">
+                                                        <img alt="mail" src="assets/img/envelope-open.svg">
+                                                        نمایش
+                                                    </a></td>
+                                            </tr>
+                                            <tr class="text-secondary">
+                                                <td class="py-3" scope="row">2360</td>
+                                                <td class="py-3">1400/01/08</td>
+                                                <td class="py-3">پیگیری درخواست قرارداد شماره 84 </td>
+                                                <td class="py-3">احتراما به استحضار میرساند با توجه به ...</td>
+                                                <td class="py-3"><span
+                                                        class="alert-warning py-1 fs-7 px-2 rounded-pill">در حال
+                                                        بررسی</span></td>
+                                                <td><a href="request-details.html"
+                                                        class="btn bg-gray3 text-secondary border border-dark px-4 font-bold">
+                                                        <img alt="mail" src="assets/img/envelope-open.svg">
+                                                        نمایش
+                                                    </a></td>
+                                            </tr>
+                                            <tr class="text-secondary">
+                                                <td class="py-3" scope="row">2365</td>
+                                                <td class="py-3">1402/01/08</td>
+                                                <td class="py-3">پیگیری درخواست قرارداد شماره 84 </td>
+                                                <td class="py-3">احتراما به استحضار میرساند با توجه به ...</td>
+                                                <td class="py-3"><span
+                                                        class="alert-success py-1 fs-7 px-2 rounded-pill">پاسخ
+                                                        داده</span></td>
+                                                <td><a href="request-details.html"
+                                                        class="btn bg-gray3 text-secondary border border-dark px-4 font-bold">
+                                                        <img alt="mail" src="assets/img/envelope-open.svg">
+                                                        نمایش
+                                                    </a></td>
+                                            </tr>
+                                            <tr class="text-secondary">
+                                                <td class="py-3" scope="row">2365</td>
+                                                <td class="py-3">1402/01/08</td>
+                                                <td class="py-3">پیگیری درخواست قرارداد شماره 84 </td>
+                                                <td class="py-3">احتراما به استحضار میرساند با توجه به ...</td>
+                                                <td class="py-3"><span
+                                                        class="alert-danger py-1 fs-7 px-2 rounded-pill">بسته شده</span>
+                                                </td>
+                                                <td><a href="request-details.html"
+                                                        class="btn bg-gray3 text-secondary border border-dark px-4 font-bold">
+                                                        <img alt="mail" src="assets/img/envelope-open.svg">
+                                                        نمایش
+                                                    </a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- pagination -->
+                                <div class="d-flex align-items-center justify-content-center gap-3 mt-5 paginations">
+                                    <a class="btn bg-gray3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </a>
+                                    <a class="btn bg-gray3 active">1</a>
+                                    <a class="btn bg-gray3">2</a>
+                                    <a class="btn bg-gray3">3</a>
+                                    <a class="btn bg-gray3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                                aria-labelledby="profile-tab" tabindex="0">
+                                <div class="p-3 d-flex flex-wrap gap-3 align-items-center justify-content-between">
+                                    <div
+                                        class="bg-white rounded-12 w-390 py-1 px-2 border d-flex align-items-center justify-content-between">
+                                        <input placeholder="جستجو" class="border-0 outline-none flex-grow-1">
+                                        <img alt="search" src="assets/img/Vector.svg">
+                                    </div>
+                                    <select class="form-select w-184">
+                                        <option>وضعیت</option>
+                                        <option>تحویل داده شده</option>
+                                        <option>در انتظار</option>
+                                    </select>
+                                </div>
+                                <div class="table-responsive p-3">
+                                    <table
+                                        class="table table-striped text-center table-hover fs-14 fw-bold text-secondary">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="text-center">
+                                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                                        <img alt="sort" src="assets/img/chevron-up-down.svg">
+                                                        <span class="cursor">شناسه</span>
+                                                    </div>
+                                                </th>
+                                                <th scope="col" class="text-center">
+                                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                                        <img alt="sort" src="assets/img/chevron-up-down.svg">
+                                                        <span class="cursor">تاریخ</span>
+                                                    </div>
+                                                </th>
+                                                <th scope="col" class="text-center">
+                                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                                        <img alt="sort" src="assets/img/chevron-up-down.svg">
+                                                        <span class="cursor">موضوع</span>
+                                                    </div>
+                                                </th>
+                                                <th scope="col" class="text-center">
+                                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                                        <img alt="sort" src="assets/img/chevron-up-down.svg">
+                                                        <span class="cursor">توضیحات</span>
+                                                    </div>
+                                                </th>
+                                                <th scope="col" class="text-center">
+                                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                                        <img alt="sort" src="assets/img/chevron-up-down.svg">
+                                                        <span class="cursor">وضعیت</span>
+                                                    </div>
+                                                </th>
+                                                <th scope="col" class="text-center">
+                                                    <span class="cursor">جزئیات</span>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="text-secondary">
+                                                <td class="py-3" scope="row">2365</td>
+                                                <td class="py-3">1402/01/08</td>
+                                                <td class="py-3">پیگیری درخواست قرارداد شماره 84 </td>
+                                                <td class="py-3">احتراما به استحضار میرساند با توجه به ...</td>
+                                                <td class="py-3"><span
+                                                        class="alert-primary py-1 fs-7 px-2 rounded-pill">در انتظار
+                                                        پاسخ</span></td>
+                                                <td><a href="request-details.html"
+                                                        class="btn bg-gray3 text-secondary border border-dark px-4 font-bold">
+                                                        <img alt="mail" src="assets/img/envelope-open.svg">
+                                                        نمایش
+                                                    </a></td>
+                                            </tr>
+                                            <tr class="text-secondary">
+                                                <td class="py-3" scope="row">2360</td>
+                                                <td class="py-3">1400/01/08</td>
+                                                <td class="py-3">پیگیری درخواست قرارداد شماره 84 </td>
+                                                <td class="py-3">احتراما به استحضار میرساند با توجه به ...</td>
+                                                <td class="py-3"><span
+                                                        class="alert-warning py-1 fs-7 px-2 rounded-pill">در حال
+                                                        بررسی</span></td>
+                                                <td><a href="request-details.html"
+                                                        class="btn bg-gray3 text-secondary border border-dark px-4 font-bold">
+                                                        <img alt="mail" src="assets/img/envelope-open.svg">
+                                                        نمایش
+                                                    </a></td>
+                                            </tr>
+                                            <tr class="text-secondary">
+                                                <td class="py-3" scope="row">2365</td>
+                                                <td class="py-3">1402/01/08</td>
+                                                <td class="py-3">پیگیری درخواست قرارداد شماره 84 </td>
+                                                <td class="py-3">احتراما به استحضار میرساند با توجه به ...</td>
+                                                <td class="py-3"><span
+                                                        class="alert-success py-1 fs-7 px-2 rounded-pill">پاسخ
+                                                        داده</span></td>
+                                                <td><a href="request-details.html"
+                                                        class="btn bg-gray3 text-secondary border border-dark px-4 font-bold">
+                                                        <img alt="mail" src="assets/img/envelope-open.svg">
+                                                        نمایش
+                                                    </a></td>
+                                            </tr>
+                                            <tr class="text-secondary">
+                                                <td class="py-3" scope="row">2365</td>
+                                                <td class="py-3">1402/01/08</td>
+                                                <td class="py-3">پیگیری درخواست قرارداد شماره 84 </td>
+                                                <td class="py-3">احتراما به استحضار میرساند با توجه به ...</td>
+                                                <td class="py-3"><span
+                                                        class="alert-danger py-1 fs-7 px-2 rounded-pill">بسته شده</span>
+                                                </td>
+                                                <td><a href="request-details.html"
+                                                        class="btn bg-gray3 text-secondary border border-dark px-4 font-bold">
+                                                        <img alt="mail" src="assets/img/envelope-open.svg">
+                                                        نمایش
+                                                    </a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- pagination -->
+                                <div class="d-flex align-items-center justify-content-center gap-3 mt-5 paginations">
+                                    <a class="btn bg-gray3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </a>
+                                    <a class="btn bg-gray3 active">1</a>
+                                    <a class="btn bg-gray3">2</a>
+                                    <a class="btn bg-gray3">3</a>
+                                    <a class="btn bg-gray3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </main>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

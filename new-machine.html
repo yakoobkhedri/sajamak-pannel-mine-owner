@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+    <title>افزودن تجهیزات و ماشین آلات</title>
+</head>
+
+<body>
+
+    <section class="d-flex mx-0">
+        <div class="px-0 col-2 sidebar transition h-100vh">
+            <div class="py-4 px-3">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3">
+                        <img alt="" src="assets/img/Vector.png" class="cursor">
+                        <img alt="bell-alert" src="assets/img/bell-alert.svg" class="cursor transition">
+                        <img alt="cog" src="assets/img/cog.svg" class="cursor transition">
+                    </div>
+                    <img alt="" src="assets/img/chevron-double-right.svg" class="cursor transition" id="toggle-sidebar">
+                </div>
+                <div
+                    class="avatar d-flex align-items-center justify-content-center rounded-circle mx-auto mt-5 position-relative">
+                    <div>
+                        <img src="assets/img/69.png">
+                        <div>
+                            <input type="file"
+                                class="position-absolute top-0 end-0 start-0 bottom-0 w-100 z-10 cursor opacity-none">
+                            <img alt="add-circle" src="assets/img/add-circle.svg"
+                                class="position-absolute -bottom-4 start-0 cursor">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center text-white mt-4 avatar-name transition">
+                    <h6 class="font-bold">صابر علی نژاد</h6>
+                    <p class="text-white-50">صاحب امتیاز معدن</p>
+                </div>
+            </div>
+            <ul class="m-0 px-0 fw-bold">
+              <li class="px-3 transition">
+                <a href="dashboard.html" class="d-flex align-items-center justify-content-between text-white">
+                  <div class="d-flex align-items-center gap-3">
+                    <img alt="menu" src="assets/img/squares-plus.png">
+                    <p class="mb-0">داشبورد</p>
+                  </div>
+                  <img alt="arrow" src="assets/img/arrow-left.png">
+                </a>
+              </li>
+              <li class="px-3 transition">
+                <a href="requests.html" class="d-flex align-items-center justify-content-between text-white">
+                  <div class="d-flex align-items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                      <path d="M19.25 6.51104C20.1341 6.79549 20.75 7.6392 20.75 8.60822V12.8938C20.75 14.0304 19.9026 14.9943 18.7697 15.0867C18.4308 15.1144 18.0909 15.1386 17.75 15.1592V18.25L14.75 15.25C13.3963 15.25 12.0556 15.1948 10.7302 15.0866C10.4319 15.0623 10.1534 14.9775 9.90494 14.8451M19.25 6.51104C19.0986 6.46232 18.9393 6.43 18.7739 6.41628C17.4472 6.30616 16.1051 6.25 14.75 6.25C13.3948 6.25 12.0528 6.30616 10.7261 6.41627C9.59499 6.51015 8.75 7.47323 8.75 8.60821V12.8937C8.75 13.731 9.20986 14.4746 9.90494 14.8451M19.25 6.51104V4.63731C19.25 3.01589 18.0983 1.61065 16.4903 1.40191C14.4478 1.13676 12.365 1 10.2503 1C8.13533 1 6.05233 1.13678 4.00963 1.40199C2.40173 1.61074 1.25 3.01598 1.25 4.63738V10.8626C1.25 12.484 2.40173 13.8893 4.00964 14.098C4.58661 14.1729 5.16679 14.2376 5.75 14.2918V19L9.90494 14.8451" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    <p class="mb-0">درخواست ها</p>
+                  </div>
+                  <img alt="arrow" src="assets/img/arrow-left.png">
+                </a>
+              </li>
+              <li class="px-3 transition">
+                <a href="products.html" class="d-flex align-items-center justify-content-between text-white">
+                  <div class="d-flex align-items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                      <path d="M19.25 6.51104C20.1341 6.79549 20.75 7.6392 20.75 8.60822V12.8938C20.75 14.0304 19.9026 14.9943 18.7697 15.0867C18.4308 15.1144 18.0909 15.1386 17.75 15.1592V18.25L14.75 15.25C13.3963 15.25 12.0556 15.1948 10.7302 15.0866C10.4319 15.0623 10.1534 14.9775 9.90494 14.8451M19.25 6.51104C19.0986 6.46232 18.9393 6.43 18.7739 6.41628C17.4472 6.30616 16.1051 6.25 14.75 6.25C13.3948 6.25 12.0528 6.30616 10.7261 6.41627C9.59499 6.51015 8.75 7.47323 8.75 8.60821V12.8937C8.75 13.731 9.20986 14.4746 9.90494 14.8451M19.25 6.51104V4.63731C19.25 3.01589 18.0983 1.61065 16.4903 1.40191C14.4478 1.13676 12.365 1 10.2503 1C8.13533 1 6.05233 1.13678 4.00963 1.40199C2.40173 1.61074 1.25 3.01598 1.25 4.63738V10.8626C1.25 12.484 2.40173 13.8893 4.00964 14.098C4.58661 14.1729 5.16679 14.2376 5.75 14.2918V19L9.90494 14.8451" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    <p class="mb-0">مواد و محصولات</p>
+                  </div>
+                  <img alt="arrow" src="assets/img/arrow-left.png">
+                </a>
+              </li>
+              <li class="px-3 transition">
+                <a href="contracts.html" class="d-flex align-items-center justify-content-between text-white">
+                  <div class="d-flex align-items-center gap-3">
+                    <img alt="menu" src="assets/img/wallet.svg">
+                    <p class="mb-0">قراردادها</p>
+                  </div>
+                  <img alt="arrow" src="assets/img/arrow-left.png">
+                </a>
+              </li>
+              <li class="px-3 transition">
+                <a href="projects.html" class="d-flex align-items-center justify-content-between text-white">
+                  <div class="d-flex align-items-center gap-3">
+                    <img alt="menu" src="assets/img/document-text.svg">
+                    <p class="mb-0">پروژه ها</p>
+                  </div>
+                  <img alt="arrow" src="assets/img/arrow-left.png">
+                </a>
+              </li>
+              <li class="px-3 transition">
+                <a href="mines.html" class="d-flex align-items-center justify-content-between text-white">
+                  <div class="d-flex align-items-center gap-3">
+                    <img alt="menu" src="assets/img/wallet.svg">
+                    <p class="mb-0">اطلاعات معدن</p>
+                  </div>
+                  <img alt="arrow" src="assets/img/arrow-left.png">
+                </a>
+              </li>
+              <li class="px-3 transition">
+                <a href="profile.html" class="d-flex align-items-center justify-content-between text-white">
+                  <div class="d-flex align-items-center gap-3">
+                    <img alt="menu" src="assets/img/user.svg">
+                    <p class="mb-0">اطلاعات کاربری</p>
+                  </div>
+                  <img alt="arrow" src="assets/img/arrow-left.png">
+                </a>
+              </li>
+            </ul>
+        </div>
+        <div class="p-3 col-10 bg-gray flex-grow-1 h-100vh overflow-auto">
+            <div id="overlay"></div>
+            <!-- header -->
+            <header class="d-flex align-items-lg-center gap-4 flex-column flex-lg-row justify-content-lg-between">
+              <div class="d-flex flex-column flex-md-row align-items-center gap-3">
+                <div class="d-flex align-items-center gap-3 justify-content-between w-100">
+                  <svg id="openSidebar" xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor" class="bi bi-list d-lg-none cursor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+                  <a>
+                    <img alt="logo" src="assets/img/Frame 9249.png">
+                  </a>
+                </div>
+                <div class="bg-white rounded-12 w-390 py-1 px-2 border d-flex align-items-center justify-content-between">
+                  <input placeholder="جستجو" class="border-0 outline-none flex-grow-1">
+                  <img alt="search" src="assets/img/Vector.svg">
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <div class="language position-relative cursor">
+                  <div class="d-flex align-items-center gap-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    <img alt="language" src="assets/img/artwork.png">
+                    <p class="mb-0 fw-bold fs-7 text-secondary">فارسی</p>
+                  </div>
+                  <ul class="dropdown-menu p-0 m-0 font-bold bg-white shadow-sm rounded-4">
+                    <li class="d-flex align-items-center justify-content-center py-3 gap-3 border-bottom">
+                      <img alt="language" src="assets/img/artwork.png">
+                      <p class="mb-0 fw-bold fs-7 text-secondary">فارسی</p>
+                    </li>
+                    <li class="d-flex align-items-center justify-content-center py-3 gap-3">
+                      <img alt="language" src="assets/img/artwork.png">
+                      <p class="mb-0 fw-bold fs-7 text-secondary">English</p>
+                    </li>
+                  </ul>
+                </div>
+                <span class="divider"></span>
+                <div class="exit d-flex align-items-center gap-2 cursor">
+                  <img alt="language" src="assets/img/exit.svg">
+                  <p class="mb-0 fw-bold fs-7 text-secondary">خروج از حساب </p>
+                </div>
+              </div>
+            </header>
+            <!-- main -->
+            <main>
+                <!-- breadcrumb -->
+                <nav aria-label="breadcrumb" class="mt-4">
+                    <ol class="breadcrumb fs-7 font-bold">
+                        <li class="breadcrumb-item"><a class="text-dark" href="dashboard.html">ناحیه کاربری</a></li>
+                        <li class="breadcrumb-item"><a class="text-dark" href="machines.html">تجهیزات</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">افزودن تجهیزات</li>
+                    </ol>
+                </nav>
+                <!-- table -->
+                <div class="bg-white rounded-4 pb-3">
+                    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between p-3 border-bottom">
+                        <a href="machines.html" class="d-flex align-items-center gap-2 font-bold text-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                              </svg>
+                            افزودن تجهیزات و ماشین آلات
+                        </a>
+                    </div>
+                    <div class="px-3">
+                        <div class="d-flex align-items-center justify-content-between mt-3 px-3 alert alert-warning alert-dismissible fade show" role="alert">
+                            <div class="d-flex align-items-center gap-3">
+                                <img alt="alert" src="assets/img/exclamation-triangle.png">
+                                <p class="mb-0 fw-bold fs-7">
+                                    ﺗﺠﻬﻴﺰات و ماشین آلات خود را ثبت نمائید. جهت نمایش بهتر، لطفا تصاویر و توضیحات محصول  را کامل درج نمایید.
+                                </p>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        <div class="tab-content mt-4" id="myTabContent">
+                            <div class="container">
+                                <form class="row g-4 mt-4 font-bold">
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">زمینه فعالیت</label>
+                                            <select class="form-select">
+                                                <option>شناسایی و اکتشافات</option>
+                                                <option>شناسایی و اکتشافات</option>
+                                                <option>شناسایی و اکتشافات</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">نوع تجهیزات و ماشین
+                                                آلات</label>
+                                            <select class="form-select">
+                                                <option>ماشین آلات عمرانی و حفاری</option>
+                                                <option>ماشین آلات عمرانی و حفاری</option>
+                                                <option>ماشین آلات عمرانی و حفاری</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">عنوان محصول</label>
+                                            <input type="text" class="form-control" placeholder="لودر چرخ لاستیکی 17 تنی">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">نام برند</label>
+                                            <input type="text" class="form-control" placeholder="Sany SYL956">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">مدل دستگاه</label>
+                                            <input type="text" class="form-control" placeholder="SYL956">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">کشور سازنده</label>
+                                            <input type="text" class="form-control" placeholder="ترکیه">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">شاخص قیمت</label>
+                                            <select class="form-select">
+                                                <option>متر مربع</option>
+                                                <option>متر مربع</option>
+                                                <option>متر مربع</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">قیمت فعالیت (تومان)</label>
+                                            <input type="text" class="form-control" placeholder="350,000">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">شهر(های) تحت پوشش</label>
+                                            <select class="form-select">
+                                                <option>کرمان-رفسنجان-بم</option>
+                                                <option>کرمان-جیرفت-بم</option>
+                                                <option>کرمان-سیرجان-بم</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <label for="exampleInputEmail1" class="form-label">کاتالوگ محصول</label>
+                                                <label for="formFileLg" class="form-label text-muted">2 MB . jpg ,
+                                                    png , bmp, pdf</label>
+                                            </div>
+                                            <div class="d-flex border rounded-3 position-relative">
+                                                <input type="file" class="position-absolute end-0 start-0 bottom-0 top-0 w-100 opacity-none">
+                                                <input class="form-control border-start-0">
+                                                <div class="d-flex align-items-center cursor text-secondary bg-gray px-2 gap-1 justify-content-center">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-paperclip rotate-45" viewBox="0 0 16 16">
+                                                        <path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"></path>
+                                                      </svg>
+                                                   <span>پیوست</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">توضیحات</label>
+                                            <textarea rows="11"
+                                                class="form-control">Maximum digging depth 5740 - 6720Stick length 2530 / 3000 / 3600 Operating weight, t 21,5 / 21,7 / 21,9 Bucket capacity (SAE), m³ 0,4…1,25 Engine manufacturer КАММИНЗ КАМА Engine model QSB4.5 160 Engine power, kW (hp) 120 (163) Voltage, V 24 Engine displacement 4500 Emission class</textarea>
+                                                <p class="text-secondary mt-2">رفسنجان ، کرمان، سیرجان ، جیرفت ، بم</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">گالری تصاویر</label>
+                                            <div class="border rounded-3 p-3">
+                                              <div class="d-flex flex-wrap gap-3 align-items-center justify-content-md-between justify-content-center">
+                                                <img src="assets/img/Rectangle 3425.png">
+                                                <img src="assets/img/Rectangle 3426.png">
+                                                <img src="assets/img/Rectangle 3427.png">
+                                                <img src="assets/img/Rectangle 3425.png">
+                                              </div>
+                                              <a class="border rounded-3 mt-3 text-center btn-outline-secondary fw-bold p-2 d-block">افزودن از گالری تصاویر</a>
+                                            </div>
+                                            <input type="submit" value="ثبت اطلاعات"
+                                            class="btn btn-info py-3 mt-4 text-white w-100 me-auto d-block">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+            </main>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
