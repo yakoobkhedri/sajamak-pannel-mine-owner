@@ -151,7 +151,9 @@ a {
 .rounded-12 {
     border-radius: 12px;
 }
-
+.border-dash{
+    border: 2px dashed lightgray;
+}
 .-bottom-4 {
     bottom: -4px;
 }
