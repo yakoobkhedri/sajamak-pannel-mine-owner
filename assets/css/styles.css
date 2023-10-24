@@ -192,7 +192,10 @@ a {
     color: #00BED8 !important;
     border-bottom: 3px solid #00BED8;
 }
-
+.max-w-807{
+    max-width: 807px;
+    width: 100%;
+}
 /* sidebar */
 .sidebar {
     background-color: #1F2A37;
