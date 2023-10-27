@@ -4,12 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/jquery.uploader.css">
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
   <title>داشبورد</title>
 </head>
-
+ <style>
+  .jquery-uploader-select-card {
+  width: 100%;
+}
+ </style>
 <body>
 
   <section class="d-flex mx-0">
@@ -169,34 +175,70 @@
             <li class="breadcrumb-item active" aria-current="page">پروژه ها</li>
           </ol>
         </nav>
-        <!-- table -->
-        <form class="bg-white rounded-12 p-5 max-w-807 mx-auto mt-5">
-            <p class="lh-lg">
-              با سلام!<br>
-              کاربر محترم <span class="font-bold">صابر علی نژاد</span> به پنل کاربری "سجامک" خوش آمدید .<br>
-              برای سهولت و بهره‌مندی از تمام خدمات سجامک، رزومه و اطلاعات فردی خود را در قسمت اطلاعات حساب تکمیل نمایید و
-              یا رزومه و مدارک مورد نیاز را آپلود نمایید.<br>
-              <span class="font-bold">مسئولیت صحت اطلاعات درج شده بر عهده کاربران می باشد.</span>
-            </p>
-            <div class="d-flex flex-column w-100 py-5 position-relative border mt-5 rounded-3 align-items-center cursor text-secondary bg-gray px-2 gap-1 justify-content-center">
-              <input type="file" class="position-absolute end-0 start-0 bottom-0 top-0 w-100 opacity-none">
-              <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
-                  <path d="M29.7001 16C29.7001 15.8533 29.6201 15.7066 29.5801 15.56C29.5184 15.3012 29.4382 15.0472 29.3401 14.8C29.2734 14.64 29.1801 14.48 29.1001 14.3066C29.0201 14.1333 28.9001 13.9066 28.7801 13.72C28.6601 13.5333 28.5001 13.44 28.5001 13.3333C28.5001 13.2266 28.2334 13 28.0868 12.84C27.9401 12.68 27.8067 12.5733 27.6601 12.44L27.1667 12L26.6867 11.68C26.4983 11.5647 26.3023 11.4622 26.1001 11.3733L25.5801 11.1333C25.3623 11.0526 25.1396 10.9858 24.9134 10.9333C24.7342 10.8806 24.5515 10.8405 24.3667 10.8133L24.0601 10.6666C23.516 9.09471 22.4955 7.73146 21.1405 6.76659C19.7855 5.80172 18.1635 5.2832 16.5001 5.2832C14.8367 5.2832 13.2146 5.80172 11.8596 6.76659C10.5047 7.73146 9.48414 9.09471 8.94008 10.6666L8.70008 10.7333C8.51528 10.7605 8.33261 10.8006 8.15341 10.8533C7.9272 10.9058 7.70453 10.9726 7.48675 11.0533L6.96675 11.2933C6.76451 11.3822 6.56851 11.4847 6.38008 11.6L5.90008 12L5.40675 12.4133C5.26008 12.5466 5.11341 12.6666 4.98008 12.8133C4.84675 12.96 4.70008 13.1466 4.56675 13.3066C4.43341 13.4666 4.32675 13.6133 4.22008 13.7866C4.11341 13.96 4.00675 14.1733 3.90008 14.3733C3.79341 14.5733 3.72675 14.7066 3.66008 14.8666C3.562 15.1139 3.4818 15.3679 3.42008 15.6266C3.42008 15.7733 3.32675 15.92 3.30008 16.0666C3.21709 16.4839 3.17246 16.9079 3.16675 17.3333C3.173 17.7404 3.21314 18.1462 3.28675 18.5466C3.28675 18.68 3.35341 18.8 3.38008 18.9333C3.44598 19.1952 3.5261 19.4534 3.62008 19.7066L3.78008 20.0933C3.89745 20.3504 4.03106 20.5998 4.18008 20.84L4.36675 21.1333C4.38593 21.1707 4.40823 21.2064 4.43341 21.24L4.50008 21.3333C5.12106 22.1613 5.92629 22.8333 6.85199 23.2962C7.77769 23.759 8.79845 24 9.83342 24H13.8334V22.1733C13.4283 22.4083 12.9684 22.5325 12.5001 22.5333C11.7778 22.5266 11.0875 22.2341 10.5801 21.72C10.3365 21.468 10.1449 21.1704 10.0164 20.8443C9.88791 20.5182 9.82495 20.1699 9.83114 19.8195C9.83734 19.469 9.91256 19.1232 10.0525 18.8019C10.1925 18.4805 10.3944 18.1899 10.6467 17.9466L14.6467 14.08C15.1444 13.6003 15.8089 13.3326 16.5001 13.3333C17.2062 13.3363 17.8823 13.6192 18.3801 14.12L22.3801 18.12C22.8768 18.6196 23.1555 19.2955 23.1555 20C23.1555 20.7045 22.8768 21.3803 22.3801 21.88C21.8823 22.3808 21.2062 22.6637 20.5001 22.6666C20.031 22.6711 19.5698 22.5465 19.1667 22.3066V24H23.1667C24.2017 24 25.2225 23.759 26.1482 23.2962C27.0739 22.8333 27.8791 22.1613 28.5001 21.3333L28.5667 21.2666C28.5919 21.233 28.6142 21.1973 28.6334 21.16L28.8201 20.8666C28.9691 20.6265 29.1027 20.3771 29.2201 20.12L29.3801 19.7333C29.4741 19.4801 29.5542 19.2219 29.6201 18.96C29.6201 18.8266 29.6867 18.7066 29.7134 18.5733C29.7885 18.1641 29.8287 17.7493 29.8334 17.3333C29.8319 16.8856 29.7872 16.4391 29.7001 16Z" fill="#919EAB"></path>
-                  <path d="M17.4467 15.0533C17.1975 14.809 16.8624 14.6722 16.5134 14.6722C16.1644 14.6722 15.8293 14.809 15.5801 15.0533L11.5801 18.92C11.4386 19.0367 11.3227 19.1814 11.2397 19.345C11.1567 19.5085 11.1083 19.6875 11.0976 19.8706C11.0869 20.0537 11.1141 20.2371 11.1775 20.4092C11.2409 20.5813 11.3391 20.7385 11.466 20.8709C11.593 21.0034 11.7458 21.1082 11.9151 21.1788C12.0844 21.2495 12.2664 21.2845 12.4498 21.2816C12.6332 21.2787 12.814 21.2379 12.981 21.162C13.1479 21.086 13.2974 20.9764 13.4201 20.84L15.1667 19.1466L15.1667 26.6666C15.1667 27.0203 15.3072 27.3594 15.5573 27.6094C15.8073 27.8595 16.1465 28 16.5001 28C16.8537 28 17.1928 27.8595 17.4429 27.6094C17.6929 27.3594 17.8334 27.0203 17.8334 26.6666V19.2133L19.5534 20.9466C19.6774 21.0716 19.8248 21.1708 19.9873 21.2385C20.1498 21.3062 20.3241 21.341 20.5001 21.341C20.6761 21.341 20.8504 21.3062 21.0129 21.2385C21.1753 21.1708 21.3228 21.0716 21.4467 20.9466C21.5717 20.8227 21.6709 20.6752 21.7386 20.5127C21.8063 20.3503 21.8411 20.176 21.8411 20C21.8411 19.824 21.8063 19.6497 21.7386 19.4872C21.6709 19.3247 21.5717 19.1773 21.4467 19.0533L17.4467 15.0533Z" fill="#919EAB"></path>
-                  </svg>
-             <span class="fw-normal fs-14">Upload file</span>
-          </div>
-          <input type="submit" value="تایید" class="btn-info rounded-3 fw-bold py-2 px-5 mt-3 me-auto text-white cursor border-0 d-flex align-items-center justify-content-center">
-          </form>
+         <!-- table -->
+         <form class="bg-white rounded-12 p-5 max-w-807 mx-auto mt-5">
+          <p class="lh-lg">
+            با سلام!<br>
+            کاربر محترم <span class="font-bold">صابر علی نژاد</span> به پنل کاربری "سجامک" خوش آمدید .<br>
+            برای سهولت و بهره‌مندی از تمام خدمات سجامک، رزومه و اطلاعات فردی خود را در قسمت اطلاعات حساب تکمیل نمایید و
+            یا رزومه و مدارک مورد نیاز را آپلود نمایید.<br>
+            <span class="font-bold mb-5 d-block">مسئولیت صحت اطلاعات درج شده بر عهده کاربران می باشد.</span>
+            <input type="text" id="demo1" value="">
+          </p>
+        <input type="submit" value="تایید" class="btn-info rounded-3 fw-bold py-2 px-5 mt-3 me-auto text-white cursor border-0 d-flex align-items-center justify-content-center">
+        </form>
       </main>
     </div>
   </section>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-  <script src="assets/js/scrollreveal.min.js"></script>
+
   <script src="assets/js/bootstrap.bundle.min.js"></script>/
   <script src="assets/js/scripts.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="assets/js/jquery.uploader.min.js"></script>
+  <script type="application/javascript">
+      let ajaxConfig = {
+          ajaxRequester: function (config, uploadFile, pCall, sCall, eCall) {
+              let progress = 0
+              let interval = setInterval(() => {
+                  progress += 10;
+                  pCall(progress)
+                  if (progress >= 100) {
+                      clearInterval(interval)
+                      const windowURL = window.URL || window.webkitURL;
+                      sCall({
+                          data: windowURL.createObjectURL(uploadFile.file)
+                      })
+                      // eCall("上传异常")
+                  }
+              }, 300)
+          }
+      }
+      $("#demo1").uploader({ multiple: true, ajaxConfig: ajaxConfig, autoUpload: false }) </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1VDDWMRSTH"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-1VDDWMRSTH');
+  </script>
+
+  <script>
+      try {
+          fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function (response) {
+              return true;
+          }).catch(function (e) {
+              var carbonScript = document.createElement("script");
+              carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+              carbonScript.id = "_carbonads_js";
+              document.getElementById("carbon-block").appendChild(carbonScript);
+          });
+      } catch (error) {
+          console.log(error);
+      }
+  </script>
 </body>
 
 </html>
