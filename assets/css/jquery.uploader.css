@@ -134,8 +134,13 @@
 .jquery-uploader-preview-action > ul > li {
     cursor: pointer;
     padding: 5px;
-    float: left;
-}
+    float: right;
+    margin: auto;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
 
 .jquery-uploader-preview-action > ul > li:hover {
     transform: scale(1.3);
