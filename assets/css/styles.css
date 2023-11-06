@@ -202,6 +202,27 @@ a {
   .fa-trash-o::before {
     content: url('../img/close-circle.png')!important;
   }
+  .formLogin.error .text-danger,
+.formLogin.warning .text-warning,
+.formLogin.number .text-danger {
+    display: block !important;
+}
+
+.formLogin.error #pass,
+.formLogin.error #tel,
+.formLogin.number #telو.formLogin.error #pass1 {
+    border: 1px solid #dc3545 !important;
+}
+
+.formLogin.warning #tel {
+    border: 1px solid #ffc107 !important;
+}
+#togglePassword.bi-eye img[alt="seen"],#togglePassword2.bi-eye img[alt="seen"]{
+    display: none;
+}
+#togglePassword.bi-eye img[alt="unseen"],#togglePassword2.bi-eye img[alt="unseen"]{
+    display: block!important;
+}
 /* sidebar */
 .sidebar {
     background-color: #1F2A37;

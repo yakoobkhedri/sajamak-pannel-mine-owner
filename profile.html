@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
     <title>اطلاعات حساب کاربری</title>
@@ -444,62 +443,70 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
-                                aria-labelledby="contact-tab" tabindex="0">
-                                <div class="container">
-                                    <div class="row g-4">
-                                        <form class="col-lg-6">
-                                            <div class="mb-3">
-                                                <label for="exampleInputEmail1"
-                                                    class="form-label d-flex align-items-center gap-2 text-secondary">
-                                                    <img alt="key" src="assets/img/key.svg">
-                                                    رمز عبور قبلی
-                                                </label>
-                                                <div
-                                                    class="d-flex align-items-center justify-content-between p-2 border rounded-3">
-                                                    <input type="password" class="form-control flex-grow-1 border-0"
-                                                        value="!73rpO75">
-                                                    <img alt="unseen" src="assets/img/unseen.svg" class="cursor">
-                                                </div>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="exampleInputEmail1"
-                                                    class="form-label d-flex align-items-center gap-2 text-secondary">
-                                                    <img alt="key" src="assets/img/key.svg">
-                                                    رمز عبور جدید
-                                                </label>
-                                                <div
-                                                    class="d-flex align-items-center justify-content-between p-2 border rounded-3">
-                                                    <input type="password" class="form-control flex-grow-1 border-0"
-                                                        value="!73rpO75">
-                                                    <img alt="unseen" src="assets/img/eye.svg" class="cursor">
-                                                </div>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="exampleInputEmail1"
-                                                    class="form-label d-flex align-items-center gap-2 text-secondary">
-                                                    <img alt="key" src="assets/img/key.svg">
-                                                    تکرار رمز عبور جدید
-                                                </label>
-                                                <div
-                                                    class="d-flex align-items-center justify-content-between p-2 border rounded-3">
-                                                    <input type="password" class="form-control flex-grow-1 border-0"
-                                                        value="!73rpO75">
-                                                    <img alt="unseen" src="assets/img/eye.svg" class="cursor">
-                                                </div>
-                                            </div>
-                                            <label class="text-gray font-bold fs-14 mt-3">
-                                                <input type="checkbox" class="form-check-input ms-2">
-                                                مرا به خاطر بسپار
+                            aria-labelledby="contact-tab" tabindex="0">
+                            <div class="container">
+                                <div class="row g-4">
+                                    <form class="col-lg-6 formLogin">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1"
+                                                class="form-label d-flex align-items-center gap-2 text-secondary">
+                                                <img alt="key" src="assets/img/key.svg">
+                                                رمز عبور قبلی
                                             </label>
-                                            <input type="submit" value="تایید"
-                                                class="btn btn-info text-white font-bold w-100 py-3 mt-3">
-                                        </form>
-                                        <div class="col-lg-6">
-
+                                            <div class="d-flex align-items-center justify-content-between p-2 border rounded-3 mt-2">
+                                                <input type="password" id="pass1" class="form-control flex-grow-1 border-0"
+                                                  placeholder="رمز عبور قبلی را وارد نمایید">
+                                                <div id="togglePassword">
+                                                  <img alt="seen" src="assets/img/eye.svg" class="cursor">
+                                                  <img alt="unseen" src="assets/img/eye-slash.svg" class="cursor d-none">
+                                                </div>
+                                              </div>
                                         </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1"
+                                                class="form-label d-flex align-items-center gap-2 text-secondary">
+                                                <img alt="key" src="assets/img/key.svg">
+                                                رمز عبور جدید
+                                            </label>
+                                            <div class="d-flex align-items-center justify-content-between p-2 border rounded-3 mt-2">
+                                                <input type="password" id="pass2" class="form-control flex-grow-1 border-0"
+                                                  placeholder="رمز عبور جدید را وارد نمایید">
+                                                <div id="togglePassword2">
+                                                  <img alt="seen" src="assets/img/eye.svg" class="cursor">
+                                                  <img alt="unseen" src="assets/img/eye-slash.svg" class="cursor d-none">
+                                                </div>
+                                              </div>
+                                              <small class="text-warning fs-14 mt-2 font-bold d-none">رمز جدید را وارد کنید</small>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1"
+                                                class="form-label d-flex align-items-center gap-2 text-secondary">
+                                                <img alt="key" src="assets/img/key.svg">
+                                                تکرار رمز عبور جدید
+                                            </label>
+                                            <div class="d-flex align-items-center justify-content-between p-2 border rounded-3 mt-2">
+                                                <input type="password" id="pass3" class="form-control flex-grow-1 border-0"
+                                                  placeholder="رمز عبور جدید را مجددا وارد نمایید">
+                                                <div id="togglePassword3">
+                                                  <img alt="seen" src="assets/img/eye.svg" class="cursor">
+                                                  <img alt="unseen" src="assets/img/eye-slash.svg" class="cursor d-none">
+                                                </div>
+                                              </div>
+                                              <small class="text-danger fs-14 mt-2 font-bold d-none" id="numberText"></small>
+                                        </div>
+                                        <label class="text-gray font-bold fs-14 mt-3">
+                                            <input type="checkbox" class="form-check-input ms-2">
+                                            مرا به خاطر بسپار
+                                        </label>
+                                        <input type="submit" value="تایید"
+                                            class="btn btn-info text-white font-bold w-100 py-3 mt-3">
+                                    </form>
+                                    <div class="col-lg-6">
+
                                     </div>
                                 </div>
                             </div>
+                        </div>
                         </div>
                     </div>
             </main>
@@ -508,11 +515,41 @@
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script src="assets/js/scrollreveal.min.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/map.js"></script>
+    <script src="assets/js/showPassword.js"></script>
+    <script>
+        const form = document.querySelector('.formLogin');
+        form.addEventListener('submit', validate);
+    
+        function validate(event) {
+          const pass2 = document.getElementById('pass2');
+          const pass3 = document.getElementById('pass3');
+          const numberText = document.getElementById('numberText');
+    
+          if (pass2.value.length === 0 || pass3.value.length === 0) {
+            document.querySelector('.formLogin').classList.add('warning')
+            document.querySelector('.formLogin').classList.remove('error')
+            event.preventDefault();
+          }
+          if (pass2.value === pass3.value) {
+            return
+          }
+          if (pass2.value.length < 6 || pass2.value.length > 13 || pass3.value.length < 6 || pass3.value.length > 13) {
+            document.querySelector('.formLogin').classList.add('error')
+            document.querySelector('.formLogin').classList.remove('warning')
+            numberText.textContent = 'رمز عبور باید بین 5 تا 12 کاراکتر باشد';
+            event.preventDefault();
+          }
+          else {
+            document.querySelector('.formLogin').classList.add('error')
+            numberText.textContent = 'رمز عبور یکسان نیست';
+            document.querySelector('.formLogin').classList.remove('warning')
+            event.preventDefault();
+          }
+        }
+        </script>
 </body>
 
 </html>
