@@ -253,6 +253,9 @@ a {
     display: block!important;
 }
 
+.bg-main{
+    background-color: #1F2A37;
+}
 .sidebar::-webkit-scrollbar,
 .sidebar::-webkit-scrollbar,
 .sidebar::-webkit-scrollbar,
@@ -289,6 +292,19 @@ section > .col-10::-webkit-scrollbar-thumb,.chatBox::-webkit-scrollbar-thumb {
     /* scroll thumb and track */
     scroll-margin: 29px 0;
 }
+  .w-15{
+    width: 15px;
+  }
+  .h-15{
+    height: 15px;
+  }
+  .h-484{
+    height: 484px;
+  }
+  .max-w-945{
+    max-width: 945px;
+    width: 100%;
+  }
 /* sidebar */
 .sidebar {
     background-color: #1F2A37;
