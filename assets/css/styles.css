@@ -292,8 +292,14 @@ section > .col-10::-webkit-scrollbar-thumb,.chatBox::-webkit-scrollbar-thumb {
     /* scroll thumb and track */
     scroll-margin: 29px 0;
 }
-  .w-15{
+ .w-15{
     width: 15px;
+  }
+  .h-405{
+    height: 405px;
+  }
+  .w-145{
+    width: 145px;
   }
   .h-15{
     height: 15px;
@@ -304,6 +310,9 @@ section > .col-10::-webkit-scrollbar-thumb,.chatBox::-webkit-scrollbar-thumb {
   .max-w-945{
     max-width: 945px;
     width: 100%;
+  }
+  .rounded-6{
+    border-radius: 6px;
   }
 /* sidebar */
 .sidebar {
