@@ -116,8 +116,17 @@ a {
 .h-64 {
     height: 64px;
 }
+.h-15 {
+    height: 15px;
+}
+.w-15 {
+    width: 15px;
+}
 .h-48 {
     height: 48px;
+}
+.h-484{
+    height: 484px;
 }
 .w-48 {
     width: 48px;
@@ -212,6 +221,10 @@ a {
     max-width: 807px;
     width: 100%;
 }
+.max-w-945{
+    max-width: 945px;
+    width: 100%;
+}
 .fa-plus::before {
     content: url('../img/ic-eva_cloud-upload-fill.png')!important;
   }
@@ -238,6 +251,43 @@ a {
 }
 #togglePassword.bi-eye img[alt="unseen"],#togglePassword2.bi-eye img[alt="unseen"]{
     display: block!important;
+}
+
+.sidebar::-webkit-scrollbar,
+.sidebar::-webkit-scrollbar,
+.sidebar::-webkit-scrollbar,
+section>.col-10::-webkit-scrollbar,.chatBox::-webkit-scrollbar {
+    width: 4px;
+    /* width of the entire scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-track,
+.sidebar::-webkit-scrollbar-track,
+.sidebar::-webkit-scrollbar-track,
+section > .col-10::-webkit-scrollbar-track,.chatBox::-webkit-scrollbar {
+    background: transparent;
+    /* color of the tracking area */
+    margin: 29px 0;
+}
+
+.sidebar::-webkit-scrollbar-thumb,
+.sidebar::-webkit-scrollbar-thumb,
+.sidebar::-webkit-scrollbar-thumb,
+section > .col-10::-webkit-scrollbar-thumb,.chatBox::-webkit-scrollbar-thumb {
+    background-color: gray;
+    /* color of the scroll thumb */
+    border-radius: 40px;
+    /* roundness of the scroll thumb */
+    border: 1px solid transparent;
+    /* creates padding around scroll thumb */
+}
+
+.sidebar,section>.col-10,.chatBox {
+    scrollbar-width: thin;
+    /* "auto" or "thin" */
+    scrollbar-color: gray transparent;
+    /* scroll thumb and track */
+    scroll-margin: 29px 0;
 }
 /* sidebar */
 .sidebar {
